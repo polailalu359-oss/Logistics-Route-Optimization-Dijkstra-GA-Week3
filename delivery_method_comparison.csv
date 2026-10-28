@@ -1,0 +1,5 @@
+,trips,km,hours,cost,seconds,km_vs_random_pct,km_vs_NN_pct
+Random,5.0,797.9,31.6,12420.0,0.008,0.0,70.6
+Nearest Neighbour,5.0,467.7,20.6,7797.0,0.0,-41.4,0.0
+NN + 2-opt,5.0,336.4,16.2,5960.0,0.033,-57.8,-28.1
+Genetic Algorithm,5.0,358.2,16.9,6265.0,3.949,-55.1,-23.4

@@ -1,0 +1,191 @@
+{
+  "network": {
+    "cities": 12,
+    "roads": 23
+  },
+  "A_pairs": 132,
+  "A_gap": {
+    "cost_inr": {
+      "mean": 3.6,
+      "max": 44.7
+    },
+    "distance_km": {
+      "mean": 2.8,
+      "max": 35.5
+    },
+    "time_hrs": {
+      "mean": 5.5,
+      "max": 51.7
+    }
+  },
+  "A_same_path_pct": {
+    "cost_inr": 59.8,
+    "distance_km": 78.8,
+    "time_hrs": 66.7
+  },
+  "A_greedy_worse_pct": {
+    "cost_inr": 40.2,
+    "distance_km": 21.2,
+    "time_hrs": 33.3
+  },
+  "A_worst": [
+    "time_hrs",
+    "Nagpur",
+    "Bengaluru",
+    51.7
+  ],
+  "A_scenarios": [
+    {
+      "optimised_for": "distance_km",
+      "avg_km": 1376.4,
+      "avg_hrs": 28.3,
+      "avg_cost": 35332.9
+    },
+    {
+      "optimised_for": "time_hrs",
+      "avg_km": 1393.4,
+      "avg_hrs": 27.6,
+      "avg_cost": 35388.0
+    },
+    {
+      "optimised_for": "cost_inr",
+      "avg_km": 1389.1,
+      "avg_hrs": 28.0,
+      "avg_cost": 35146.9
+    }
+  ],
+  "A_example": {
+    "distance_km": {
+      "path": [
+        "Delhi",
+        "Lucknow",
+        "Nagpur",
+        "Chennai"
+      ],
+      "km": 2368.6,
+      "hrs": 53.2,
+      "cost": 60606
+    },
+    "time_hrs": {
+      "path": [
+        "Delhi",
+        "Lucknow",
+        "Nagpur",
+        "Hyderabad",
+        "Chennai"
+      ],
+      "km": 2463.0,
+      "hrs": 49.7,
+      "cost": 59614
+    },
+    "cost_inr": {
+      "path": [
+        "Delhi",
+        "Lucknow",
+        "Nagpur",
+        "Hyderabad",
+        "Chennai"
+      ],
+      "km": 2463.0,
+      "hrs": 49.7,
+      "cost": 59614
+    },
+    "greedy": {
+      "path": [
+        "Delhi",
+        "Ahmedabad",
+        "Pune",
+        "Bengaluru",
+        "Chennai"
+      ],
+      "km": 2805.3
+    }
+  },
+  "A_closure": {
+    "closed": [
+      "Lucknow",
+      "Nagpur"
+    ],
+    "before": [
+      "Delhi",
+      "Lucknow",
+      "Nagpur",
+      "Hyderabad",
+      "Chennai"
+    ],
+    "after": [
+      "Delhi",
+      "Jaipur",
+      "Ahmedabad",
+      "Mumbai",
+      "Hyderabad",
+      "Chennai"
+    ],
+    "before_hrs": 49.7,
+    "after_hrs": 54.9,
+    "increase_pct": 10.5
+  },
+  "A_hub_failure": {
+    "hub": "Nagpur",
+    "avg_increase_pct": 5.1,
+    "max_increase_pct": 91.7,
+    "affected_pct": 18.2,
+    "unreachable": 0
+  },
+  "B_random_avg_km": 831.0,
+  "B_ga_params": {
+    "population": 150,
+    "generations": 700,
+    "mutation": 0.25,
+    "elite": 4
+  },
+  "B_summary": [
+    {
+      "method": "Random",
+      "trips": 5.0,
+      "km": 797.9,
+      "hours": 31.6,
+      "cost": 12420.0,
+      "seconds": 0.008,
+      "km_vs_random_pct": 0.0,
+      "km_vs_NN_pct": 70.6
+    },
+    {
+      "method": "Nearest Neighbour",
+      "trips": 5.0,
+      "km": 467.7,
+      "hours": 20.6,
+      "cost": 7797.0,
+      "seconds": 0.0,
+      "km_vs_random_pct": -41.4,
+      "km_vs_NN_pct": 0.0
+    },
+    {
+      "method": "NN + 2-opt",
+      "trips": 5.0,
+      "km": 336.4,
+      "hours": 16.2,
+      "cost": 5960.0,
+      "seconds": 0.033,
+      "km_vs_random_pct": -57.8,
+      "km_vs_NN_pct": -28.1
+    },
+    {
+      "method": "Genetic Algorithm",
+      "trips": 5.0,
+      "km": 358.2,
+      "hours": 16.9,
+      "cost": 6265.0,
+      "seconds": 3.949,
+      "km_vs_random_pct": -55.1,
+      "km_vs_NN_pct": -23.4
+    }
+  ],
+  "B_stops": 30,
+  "B_capacity": 600,
+  "B_total_demand": 2409,
+  "B_min_trips": 5,
+  "B_ga_start_km": 697.7,
+  "B_ga_end_km": 358.2,
+  "B_ga_gen_within_1pct": 240
+}
